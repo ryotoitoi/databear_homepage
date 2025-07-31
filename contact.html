@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - [会社名]</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>[会社名]</h1>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="index.html" data-ja="ホーム" data-en="Home">ホーム</a></li>
+                        <li><a href="service.html" data-ja="サービス" data-en="Services">サービス</a></li>
+                        <li><a href="about.html" data-ja="会社概要" data-en="About">会社概要</a></li>
+                        <li><a href="contact.html" class="active" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="language-switcher">
+                    <button onclick="switchLanguage('ja')" class="lang-btn" id="ja-btn">日本語</button>
+                    <button onclick="switchLanguage('en')" class="lang-btn" id="en-btn">English</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2 data-ja="お問い合わせ" data-en="Contact Us">お問い合わせ</h2>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <h3 data-ja="メールでのお問い合わせ" data-en="Contact by Email">メールでのお問い合わせ</h3>
+                        <p data-ja="メールアドレス: [メールアドレス]" data-en="Email: [email address]">メールアドレス: [メールアドレス]</p>
+                        <p data-ja="通常1-2営業日以内にご返信いたします。" data-en="We typically respond within 1-2 business days.">通常1-2営業日以内にご返信いたします。</p>
+                    </div>
+                    <div class="contact-method">
+                        <h3 data-ja="電話でのお問い合わせ" data-en="Contact by Phone">電話でのお問い合わせ</h3>
+                        <p data-ja="電話番号: [電話番号]" data-en="Phone: [phone number]">電話番号: [電話番号]</p>
+                        <p data-ja="営業時間: 平日 9:00-18:00" data-en="Business Hours: Weekdays 9:00-18:00">営業時間: 平日 9:00-18:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <div class="container">
+                <h3 data-ja="お問い合わせフォーム" data-en="Contact Form">お問い合わせフォーム</h3>
+                <p data-ja="以下のフォームからもお問い合わせいただけます。" data-en="You can also contact us using the form below.">以下のフォームからもお問い合わせいただけます。</p>
+                
+                <!-- Googleフォーム埋め込み用のプレースホルダー -->
+                <div class="form-placeholder">
+                    <p data-ja="[Googleフォームをここに埋め込み]" data-en="[Embed Google Form here]">[Googleフォームをここに埋め込み]</p>
+                    <!-- 実際のGoogleフォームのiframeコード例：
+                    <iframe src="https://docs.google.com/forms/d/e/[FORM_ID]/viewform?embedded=true" 
+                            width="100%" 
+                            height="800" 
+                            frameborder="0" 
+                            marginheight="0" 
+                            marginwidth="0">
+                        読み込んでいます…
+                    </iframe>
+                    -->
+                </div>
+
+                <!-- フォールバック用の基本的なHTMLフォーム -->
+                <div class="basic-form">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name" data-ja="お名前" data-en="Name">お名前</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-ja="メールアドレス" data-en="Email">メールアドレス</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-ja="件名" data-en="Subject">件名</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-ja="お問い合わせ内容" data-en="Message">お問い合わせ内容</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button" data-ja="送信" data-en="Send">送信</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="response-time">
+            <div class="container">
+                <h3 data-ja="ご返信について" data-en="About Our Response">ご返信について</h3>
+                <p data-ja="お問い合わせいただいた内容については、確認後速やかにご返信させていただきます。" data-en="We will respond to your inquiry as soon as possible after confirmation.">お問い合わせいただいた内容については、確認後速やかにご返信させていただきます。</p>
+                <p data-ja="お急ぎの場合は、お電話でのお問い合わせをおすすめいたします。" data-en="For urgent matters, we recommend contacting us by phone.">お急ぎの場合は、お電話でのお問い合わせをおすすめいたします。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-ja="会社情報" data-en="Company Info">会社情報</h4>
+                    <ul>
+                        <li><a href="about.html" data-ja="会社概要" data-en="About Us">会社概要</a></li>
+                        <li><a href="service.html" data-ja="サービス" data-en="Services">サービス</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-ja="法的情報" data-en="Legal">法的情報</h4>
+                    <ul>
+                        <li><a href="terms.html" data-ja="利用規約" data-en="Terms of Service">利用規約</a></li>
+                        <li><a href="privacy.html" data-ja="プライバシーポリシー" data-en="Privacy Policy">プライバシーポリシー</a></li>
+                        <li><a href="legal.html" data-ja="特定商取引法表記" data-en="Legal Notice">特定商取引法表記</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-ja="お問い合わせ" data-en="Contact">お問い合わせ</h4>
+                    <p data-ja="メール: [メールアドレス]" data-en="Email: [email address]">メール: [メールアドレス]</p>
+                    <p data-ja="電話: [電話番号]" data-en="Phone: [phone number]">電話: [電話番号]</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-ja="© 2024 [会社名]. All rights reserved." data-en="© 2024 [Company Name]. All rights reserved.">© 2024 [会社名]. All rights reserved.</p>
+                <p data-ja="最終更新日: 2024年1月" data-en="Last updated: January 2024">最終更新日: 2024年1月</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/language.js"></script>
+</body>
+</html>

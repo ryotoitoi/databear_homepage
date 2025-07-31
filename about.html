@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会社概要 - [会社名]</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>[会社名]</h1>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="index.html" data-ja="ホーム" data-en="Home">ホーム</a></li>
+                        <li><a href="service.html" data-ja="サービス" data-en="Services">サービス</a></li>
+                        <li><a href="about.html" class="active" data-ja="会社概要" data-en="About">会社概要</a></li>
+                        <li><a href="contact.html" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="language-switcher">
+                    <button onclick="switchLanguage('ja')" class="lang-btn" id="ja-btn">日本語</button>
+                    <button onclick="switchLanguage('en')" class="lang-btn" id="en-btn">English</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2 data-ja="会社概要" data-en="About Us">会社概要</h2>
+            </div>
+        </section>
+
+        <section class="company-info">
+            <div class="container">
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th data-ja="屋号" data-en="Business Name">屋号</th>
+                            <td data-ja="[屋号]" data-en="[Business Name]">[屋号]</td>
+                        </tr>
+                        <tr>
+                            <th data-ja="事業形態" data-en="Business Type">事業形態</th>
+                            <td data-ja="個人事業主" data-en="Sole Proprietorship">個人事業主</td>
+                        </tr>
+                        <tr>
+                            <th data-ja="設立" data-en="Established">設立</th>
+                            <td data-ja="[設立年月]" data-en="[Establishment Date]">[設立年月]</td>
+                        </tr>
+                        <tr>
+                            <th data-ja="事業内容" data-en="Business Activities">事業内容</th>
+                            <td data-ja="[事業内容の詳細]" data-en="[Business Activities Details]">[事業内容の詳細]</td>
+                        </tr>
+                        <tr>
+                            <th data-ja="主要取引先" data-en="Main Clients">主要取引先</th>
+                            <td data-ja="[主要取引先]" data-en="[Main Clients]">[主要取引先]</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission">
+            <div class="container">
+                <h3 data-ja="ミッション" data-en="Our Mission">ミッション</h3>
+                <p data-ja="[ミッションステートメント]" data-en="[Mission Statement]">[ミッションステートメント]</p>
+            </div>
+        </section>
+
+        <section class="vision">
+            <div class="container">
+                <h3 data-ja="ビジョン" data-en="Our Vision">ビジョン</h3>
+                <p data-ja="[ビジョンステートメント]" data-en="[Vision Statement]">[ビジョンステートメント]</p>
+            </div>
+        </section>
+
+        <section class="values">
+            <div class="container">
+                <h3 data-ja="価値観" data-en="Our Values">価値観</h3>
+                <ul>
+                    <li data-ja="[価値観1]" data-en="[Value 1]">[価値観1]</li>
+                    <li data-ja="[価値観2]" data-en="[Value 2]">[価値観2]</li>
+                    <li data-ja="[価値観3]" data-en="[Value 3]">[価値観3]</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="history">
+            <div class="container">
+                <h3 data-ja="沿革" data-en="History">沿革</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date" data-ja="[年月1]" data-en="[Date 1]">[年月1]</div>
+                        <div class="timeline-content" data-ja="[出来事1]" data-en="[Event 1]">[出来事1]</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date" data-ja="[年月2]" data-en="[Date 2]">[年月2]</div>
+                        <div class="timeline-content" data-ja="[出来事2]" data-en="[Event 2]">[出来事2]</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date" data-ja="[年月3]" data-en="[Date 3]">[年月3]</div>
+                        <div class="timeline-content" data-ja="[出来事3]" data-en="[Event 3]">[出来事3]</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-ja="会社情報" data-en="Company Info">会社情報</h4>
+                    <ul>
+                        <li><a href="about.html" data-ja="会社概要" data-en="About Us">会社概要</a></li>
+                        <li><a href="service.html" data-ja="サービス" data-en="Services">サービス</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-ja="法的情報" data-en="Legal">法的情報</h4>
+                    <ul>
+                        <li><a href="terms.html" data-ja="利用規約" data-en="Terms of Service">利用規約</a></li>
+                        <li><a href="privacy.html" data-ja="プライバシーポリシー" data-en="Privacy Policy">プライバシーポリシー</a></li>
+                        <li><a href="legal.html" data-ja="特定商取引法表記" data-en="Legal Notice">特定商取引法表記</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-ja="お問い合わせ" data-en="Contact">お問い合わせ</h4>
+                    <p data-ja="メール: [メールアドレス]" data-en="Email: [email address]">メール: [メールアドレス]</p>
+                    <p data-ja="電話: [電話番号]" data-en="Phone: [phone number]">電話: [電話番号]</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-ja="© 2024 [会社名]. All rights reserved." data-en="© 2024 [Company Name]. All rights reserved.">© 2024 [会社名]. All rights reserved.</p>
+                <p data-ja="最終更新日: 2024年1月" data-en="Last updated: January 2024">最終更新日: 2024年1月</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/language.js"></script>
+</body>
+</html>
