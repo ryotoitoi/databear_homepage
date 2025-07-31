@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataBear - サイト動作確認</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>DataBear サイト動作確認</h1>
+    <h2>全ページリンク</h2>
+    <ul>
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="service.html">サービス詳細</a></li>
+        <li><a href="about.html">会社概要</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="terms.html">利用規約</a></li>
+        <li><a href="privacy.html">プライバシーポリシー</a></li>
+        <li><a href="legal.html">特定商取引法表記</a></li>
+    </ul>
+    
+    <h2>言語切替テスト</h2>
+    <div class="language-switcher">
+        <button onclick="switchLanguage('ja')" class="lang-btn" id="ja-btn">日本語</button>
+        <button onclick="switchLanguage('en')" class="lang-btn" id="en-btn">English</button>
+    </div>
+    
+    <p data-ja="このテキストは日本語です" data-en="This text is in English">このテキストは日本語です</p>
+    
+    <script src="js/language.js"></script>
+</body>
+</html>
