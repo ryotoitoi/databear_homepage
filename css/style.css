@@ -401,3 +401,28 @@ footer {
 .hidden {
     display: none;
 }
+
+/* Achievements Section */
+.achievements {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.achievement-item {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.achievement-item h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
